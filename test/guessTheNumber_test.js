@@ -3,13 +3,14 @@ import guessTheNumber from '../src/guessTheNumber'
 
 describe('guessTheNumber()', () => {
 
-  it('Should expect something', () => {
+  it('Should expect something', function() {
+    this.timeout(300000)
     guessTheNumber()
-    // Immediately after calling function, the guessTheNumber process will now wait
-    // for user input. We need to simulate a response...
-    process.stdin.once('4', response => {
+    process.stdout.once('4', response => {
       console.log(response)
-    })
+    }
+    console.log(process.stdout)
+    expect(true).to.be.true
   })
   
 })
