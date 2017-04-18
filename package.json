@@ -18,6 +18,10 @@
   },
   "scripts": {
     "test": "mocha --compilers js:babel-register",
+    "start": "node app.js",
     "lint": "eslint ./"
+  },
+  "dependencies": {
+    "terminal-menu": "^2.1.1"
   }
 }
