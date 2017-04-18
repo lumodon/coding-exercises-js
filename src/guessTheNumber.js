@@ -1,16 +1,15 @@
-const readline = require('readline-sync')
+const readline = require('readline')
 const MIN = 1
 const MAX = 100
-
-const rl = {
-  question: (log, callback) => {
-    callback(readline.question(log))
-  }
-}
 
 function guessTheNumber() {
   let theNumber = Math.floor((Math.random() * 100)) + 1
   let numOfGuesses = 0
+
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+  })
 
   const recurse = () => {
     numOfGuesses++
@@ -23,9 +22,9 @@ function guessTheNumber() {
         recurse()
       } else if(parseInt(answer) === parseInt(theNumber)) {
         console.log(`You got the number! The number was ${theNumber} and you guessed ${answer}`)
-        return numOfGuesses
+        rl.close()
       } else if(answer === 'exit') {
-        return numOfGuesses
+        rl.close()
       } else {
         console.log('Invalid command. Please type a number of \'exit\' (without quotes)')
         recurse()

@@ -21,6 +21,5 @@
     "lint": "eslint ./"
   },
   "dependencies": {
-    "readline-sync": "^1.4.7"
   }
 }
