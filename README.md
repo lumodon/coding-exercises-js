@@ -13,9 +13,16 @@
 2. Install the npm modules by typing `npm install`
 3. Run all the tests by typing `npm test`
 4. Run ESLint by typing `npm run lint`
-5. Write your review on the empty branch from the pull requests [here](#)
+5. type `open src/playit/playit.html`
+6. turn your speakers down to low volume but still on.
+7. listen to sound.
+8. Write your review on the empty branch from the pull requests [here](#)
 
 ## Specifications
+
+2 hours spent for Shyp hiring mixer (4/20/17 1pm - 3pm)
+5 hours coaching
+2 hours heroku app (4/20/17 10am - 12pm)
 
 - [X] Artifact produced is a fork of the [coding-exercises-js](https://github.com/GuildCrafts/coding-exercises-js) repo.
 - [ ] Tests and correct implementations exist for the following exercises (it is recommended that you complete them in this order):
@@ -26,7 +33,7 @@
   - [X] 5. The Disemvowling
   - [X] 6. Where in the JSON?
   - [ ] 7. Who Wants A Date?
-  - [ ] 8. Play it again, JavaScript!
+  - [X] 8. Play it again, JavaScript!
   - [X] 9. Parens-B-Gone
   - [ ] 10. Resolving Symlinks
   - [ ] 11. Lairotcaf

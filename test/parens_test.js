@@ -14,3 +14,9 @@ describe('parens()', () => {
     expect(parens('12((3))')).to.equal('12(3)')
   })
 })
+
+(((1234)(((5)67))))
+{((1234){((5)67))}}
+
+openings: 6
+closing: 6
