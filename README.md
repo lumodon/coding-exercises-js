@@ -33,13 +33,13 @@
   - [X] 12. String Me Along
   - [ ] 13. Braille
   - [ ] 14. String Permutations
-  - [ ] 15. Finite State Gate
-- [ ] Can run all tests with `npm test`.
-- [ ] All tests are passing.
-- [ ] Repository includes a README file with basic installation and setup instructions.
-- [ ] All dependencies are properly declared in `package.json`.
-- [ ] All major features are added via pull requests with a clear description and concise commit messages.
-- [ ] Code uses a linter and there are no linting errors.
+  - [X] 15. Finite State Gate
+- [X] Can run all tests with `npm test`.
+- [X] All tests are passing.
+- [X] Repository includes a README file with basic installation and setup instructions.
+- [X] All dependencies are properly declared in `package.json`.
+- [X] All major features are added via pull requests with a clear description and concise commit messages.
+- [X] Code uses a linter and there are no linting errors.
 - [ ] Variables, functions, files, etc. have appropriate and meaningful names.
 - [ ] Functions are small and serve a single purpose.
 - [X] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
