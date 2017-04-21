@@ -15,7 +15,6 @@ describe('gate()', () => {
     ]
 
     const gateReturnValues = gate(input)
-    console.log(gateReturnValues)
 
     expect(gateReturnValues[0]).to.equal('Gate: CLOSED')
     expect(gateReturnValues[1]).to.equal('Remote clicked.')
