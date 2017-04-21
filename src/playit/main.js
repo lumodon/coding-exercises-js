@@ -1,25 +1,9 @@
-/*
-link gain to oscillator with tone
-use set interval for time to play
-use start button and stop button
-clear interval with stop button
-
-how to connect gain to oscillator - gain gives it volume
-without gain there is no volume being sent.
-
-*/
+'use strict'
 
 const BPM = 120 // Standard for classical music according to here: https://music.stackexchange.com/questions/4525/list-of-average-genre-tempo-bpm-levels
 const beatsPerMinuteToMillisecondsPerBeat = (bpm, notesPerMeasure) => ((bpm/60)*(1000/notesPerMeasure))
-//  Beats   minutes   milliseconds   
-// ------ x ------- x ------------ x ?
-// minute   second      seconds   
 
 document.addEventListener('DOMContentLoaded', () => {
-  // const audioNode = new AudioContext()
-  // const oscillator = audioNode.createOscillator()
-  // oscillator.connect(audioNode.destination)
-
   let interval
   let pianoScale = {
     'startNote': 'C',
@@ -58,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
   })
   document.getElementById('stop').addEventListener('click', () => {
     oscillator.stop()
-    delete oscillator
     clearInterval(interval)
   })
   document.getElementById('piano').addEventListener('click', () => {

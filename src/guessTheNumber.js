@@ -4,7 +4,6 @@ const MAX = 100
 
 function guessTheNumber() {
   let theNumber = Math.floor((Math.random() * 100)) + 1
-  let numOfGuesses = 0
 
   const rl = readline.createInterface({
     input: process.stdin,
@@ -12,7 +11,6 @@ function guessTheNumber() {
   })
 
   const recurse = () => {
-    numOfGuesses++
     rl.question(`Guess a number between ${MIN} and ${MAX}\n`, (answer) => {
       if(answer < theNumber) {
         console.log(`You guessed too low. The number was ${theNumber} and you gussed ${answer}`)
