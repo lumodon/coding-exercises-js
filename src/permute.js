@@ -1,29 +1,28 @@
+function swap(arr, pos1, pos2) {
+  const returnArr = arr.slice(0)
+  const temp = returnArr[pos1]
+  returnArr[pos1] = returnArr[pos2]
+  returnArr[pos2] = temp
+  return returnArr
+}
+
 function permute(inputString) {
   const inputArr = inputString.split('')
   const arrOfPossibilities = []
-  for(let i = 0; i < inputString.length; i++) {
-    const workingArr = inputArr.slice(0)
-    for(let j = 0; i < inputString.length; j++) {
-      if(i === j) break
-      workingArr[i] = inputArr[j]
+
+  const resurse = (group) => {
+    if(group.length < 3) {
+      arrOfPossibilities.push(group.join(''))
+      arrOfPossibilities.push(swap(group, 0, 1).join(''))
+      return
     }
-    arrOfPossibilities.push(workingArr)
+    for(let i = 0; i < group.length; i++) {
+      arrOfPossibilities.push(group)
+      group = swap(group, 0, 1)
+    }
   }
 
-  const recurse = (arr) => {
-    for(let i = 0; i < inputString.length; i++) {
-      
-      // Add arr to arrOfPossibilities if it doesn't already exist
-      let foundDuplicate = false
-      arrOfPossibilities.forEach( arrCompare => {
-        if(foundDuplicate) return
-        if(arr.join('') === arrCompare.join('')) {
-          foundDuplicate = true
-          return
-        }
-      })
-    }
-  }
+  recurse(inputArr)
 }
 
 export default permute
