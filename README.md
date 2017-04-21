@@ -34,7 +34,7 @@
   - [X] 7. Who Wants A Date?
   - [X] 8. Play it again, JavaScript!
   - [X] 9. Parens-B-Gone
-  - [ ] 10. Resolving Symlinks
+  - [X] 10. Resolving Symlinks
   - [X] 11. Lairotcaf
   - [X] 12. String Me Along
   - [ ] 13. Braille
