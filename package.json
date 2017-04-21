@@ -18,9 +18,9 @@
   },
   "scripts": {
     "test": "mocha --compilers js:babel-register",
+    "guess": "node src/guessTheNumber.js",
     "lint": "eslint ./"
   },
   "dependencies": {
-    "readline": "^1.3.0"
   }
 }

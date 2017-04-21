@@ -16,13 +16,16 @@
 5. type `open src/playit/playit.html`
 6. turn your speakers down to low volume but still on.
 7. click start then listen to sound.
-8. Write your review on the empty branch from the pull requests [here](#)
+8. type `npm run guess`
+9. try a few guesses to see responses
+10. type `exit` or enter the correct number to exit
+11. Write your review on the empty branch from the pull requests [here](#)
 
 ## Specifications
 
 - [X] Artifact produced is a fork of the [coding-exercises-js](https://github.com/GuildCrafts/coding-exercises-js) repo.
 - [ ] Tests and correct implementations exist for the following exercises (it is recommended that you complete them in this order):
-  - [ ] 1. Guess The Number
+  - [1/2] 1. Guess The Number -- No tests written, manually test according to instructions
   - [ ] 2. Scrab-Bag
   - [X] 3. String Indices
   - [ ] 4. Fibonacci Bases
@@ -43,8 +46,8 @@
 - [X] All dependencies are properly declared in `package.json`.
 - [X] All major features are added via pull requests with a clear description and concise commit messages.
 - [X] Code uses a linter and there are no linting errors.
-- [ ] Variables, functions, files, etc. have appropriate and meaningful names.
-- [ ] Functions are small and serve a single purpose.
+- [X] Variables, functions, files, etc. have appropriate and meaningful names.
+- [X] Functions are small and serve a single purpose.
 - [X] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ## Exercises
