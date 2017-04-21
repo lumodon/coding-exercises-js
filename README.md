@@ -19,7 +19,7 @@
 8. type `npm run guess`
 9. try a few guesses to see responses
 10. type `exit` or enter the correct number to exit
-11. Write your review on the empty branch from the pull requests [here](#)
+11. Write your review on the empty branch from the pull requests [here](https://github.com/lumodon/coding-exercises-js/pull/21)
 
 ## Specifications
 
