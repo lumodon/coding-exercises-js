@@ -28,7 +28,7 @@
   - [ ] 4. Fibonacci Bases
   - [X] 5. The Disemvowling
   - [X] 6. Where in the JSON?
-  - [ ] 7. Who Wants A Date?
+  - [X] 7. Who Wants A Date?
   - [X] 8. Play it again, JavaScript!
   - [X] 9. Parens-B-Gone
   - [ ] 10. Resolving Symlinks
