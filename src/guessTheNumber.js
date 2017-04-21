@@ -35,4 +35,4 @@ function guessTheNumber() {
   recurse()
 }
 
-export default guessTheNumber
+guessTheNumber()
