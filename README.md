@@ -36,7 +36,7 @@
   - [X] 8. Play it again, JavaScript!
   - [X] 9. Parens-B-Gone
   - [ ] 10. Resolving Symlinks
-  - [ ] 11. Lairotcaf
+  - [X] 11. Lairotcaf
   - [X] 12. String Me Along
   - [ ] 13. Braille
   - [ ] 14. String Permutations
