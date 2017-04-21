@@ -9,19 +9,17 @@ function factorial(operand) {
 function lair(operand) {
   let testNumber = 1
   const MAX_ITERATIONS = 103 // The highest number Spotlight Search will attempt to go to.
-  while(true) {
+  while(testNumber <= MAX_ITERATIONS + 1) {
     let result = factorial(testNumber)
     if(result === operand) {
       return --testNumber
     } else if(result > operand) {
       return 'NONE'
-    } else if(testNumber > MAX_ITERATIONS) {
+    } else if(testNumber >= MAX_ITERATIONS) {
       return 'EXCEEDED MAX ITERATIONS'
     }
     testNumber++
   }
-
-  return 'NONE'
 }
 
 
